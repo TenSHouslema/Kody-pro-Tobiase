@@ -1,0 +1,32 @@
+b = 8
+c = 0
+print ("Uhádni číslo od 1 do 20, máš 3 pokusy") #vypsání úkolu
+while c < 3: #loop
+    try: #řešení zadání znaku
+        a = int( input ("Je to číslo:")) #načtení čísla
+    except:
+        a = 30
+    if a == b: #výhra
+        print ("Vyhrál jsi") 
+        exit()
+    elif a in range(21):  
+        if c < 2: #při zbývajících pokusech
+            if c == 0: #při 2 zbývajících pokusech
+                print ("Toto je špatně, máš ještě 2 pokusy") 
+                c += 1
+            elif c == 1: #při 1 zbývajícím pokusu
+                print ("Toto je špatně, máš ještě 1 pokus")
+                c += 1
+        else: #při prohře
+                print ("Prohrál jsi")
+                c += 1
+    else: 
+        if c == 0:
+            print ("Toto není podmínka kreténe! Máš ještě 2 pokusy.") #kreténství
+            c += 1
+        elif c == 1:
+            print ("Toto není podmínka kreténe! Máš ješte 1 pokus") #kreténství
+            c += 1
+        else: #při prohře
+            print ("Prohrál jsi a Robin je teplej")
+            c += 1
