@@ -66,7 +66,9 @@ while c < 11:
             print ("a) Brecim\nb) Jsem nastvana\nc) Je mi to jedno\nd) Beru s klidem ")
         elif c == 9:
             print ("Otazka cislo 10: Co udelas, kdyz zjistis, ze te za zady nekdo pomlouva?")
-            print ("a) Taky ho pomluvim, znicim mu reputaci\nb) Nic\nc) Zkusim s nim promluvit a zjistit proc\nd) Rucne si to s nim vyridim ")
+            print ("a) Taky ho pomluvim, znicim mu reputaci\nb) Nic\nc) Zkusim s nim promluvit a zjistit proc\nd) Rucne si to s nim vyridim")
+            if sum(b) == 36:
+                print ("e) Pošlu na něho Nacistickou armádu")
         a = input() #volba odpovedi
         if a == "a":
             b.append(1)
@@ -76,6 +78,8 @@ while c < 11:
             b.append(3)
         elif a == "d":
             b.append(4)
+        elif a == "e":
+            b.append(10)
     elif c == 5 or c == 8:
         if c == 5:
             print ("Otazka cislo 6: Zalezi ti na tom, co si o tobe ostatni mysli?")
@@ -105,4 +109,6 @@ while c < 11:
             print("Jedinečná holka\nJe na tobě něco zvláštního, co přitahuje (nebo naopak odpuzuje) pozornost ostatních. Jsi svá, máš své zvláštní kouzlo. Jsi prostě jedinečná. Jsi speciální.")
         elif d in range(35,40):
             print("Rebelka\nNenecháš si nic líbit. Ráda děláš věci po svém. Nezáleží ti na názoru ostatních. Umíš se pěkně naštvat a nebojíš se vyjádřit svůj názor.")
+        elif d == 46:
+            print ("Adolf Hitler\nJsi velký vůdce.")
     c += 1
