@@ -1,134 +1,135 @@
 a = 0
-b = 0
+b = [0]
+d = 0
 print ("Mam pro tebe 10 otazek, na kazdou z nich si vyber z odpovedi a-d. Na konci se dozvis vysledek.")
 print ("Otazka cislo 1: Vyber si obleceni")
 print ("a) Sukne/saty\nb) Neco co ostatni sokuje\nc) Tricko a leginy/rifle\nd) Obleceni si vybiram podle nalady")
 a = input() #volba odpovedi
 if a == "a":
-    b += 1
+    b.append(1)
 elif a == "b":
-    b += 4
+    b.append(4)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 3
+    b.append(3)
 
 print ("Otazka cislo 2: Jaky typ holky si myslis ze jsi?")
 print ("a) Fajn holka\nb) Obycejna holka\nc) Dokonala holka\nd) Originalni holka ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 3
+    b.append(3)
 elif a == "b":
-    b += 2
+    b.append(2)
 elif a == "c":
-    b += 1
+    b.append(1)
 elif a == "d":
-    b += 4
+    b.append(4)
 
 print ("Otazka cislo 3: Jaky je tvuj nejcastejsi uces?")
 print ("a) Nejaky sileny- rozcuchane vlasy\nb) Rozpustene vlasy\nc) Culik nebo drdol\nd) Dokonaly ani vlasek vedle ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 4
+    b.append(4)
 elif a == "b":
-    b += 3
+    b.append(3)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 1
+    b.append(1)
 
 print ("Otazka cislo 4: Jaky typ kluka preferujes?")
 print ("a) Inteligentniho se smyslem pro humor\nb) Tajemneho zlobiveho kluika\nc) Sexy s vypracovanym telem\nd) Je mi to jedno, hlavne ze me ma rad ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 2
+    b.append(2)
 elif a == "b":
-    b += 4
+    b.append(4)
 elif a == "c":
-    b += 1
+    b.append(1)
 elif a == "d":
-    b += 3
+    b.append(3)
 
 print ("Otazka cislo 5: Zlomila sis nehet jaka je tva reakce?")
 print ("a) Brecim\nb) Je mi to jedno\nc) Jsem nastvana\nd) Beru s klidem ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 1
+    b.append(1)
 elif a == "b":
-    b += 3
+    b.append(3)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 4
+    b.append(4)
 
 print ("Otazka cislo 6: Zalezi ti na tom, co si o tobe ostatni mysli?")
 print ("a) Ne, je mi to jedno\nb) Nechci, aby to tak bylo, ale zalezi mi na tom\nc) Ano, nazor ostatnich je pro me dulezity\nd) Jak kdy a jak v cem ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 4
+    b.append(4)
 elif a == "b":
-    b += 2
+    b.append(2)
 elif a == "c":
-    b += 1
+    b.append(1)
 elif a == "d":
-    b += 3
+    b.append(3)
 
 print ("Otazka cislo 7: Jaky darek te nejvic potesi?")
 print ("a) Knihy, deskove hry, plysaci atd.\nb) Make up ci sperky\nc) Kvetina ci cokolada\nd) Penize ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 3
+    b.append(3)
 elif a == "b":
-    b += 1
+    b.append(1)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 4
+    b.append(4)
 
 print ("Otazka cislo 8: Jaky nosis make up?")
 print ("a) Drahy a kvalitni\nb) Zadny\nc) Spise decentni\nd) Takovy, co se hodi k obleceni ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 1
+    b.append(1)
 elif a == "b":
-    b += 4
+    b.append(4)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 3
+    b.append(3)
 
 print ("Otazka cislo 9: Jaky je tvuj oblibeny sperk?")
 print ("a) Zadny\nb) Trpitivy a drahy\nc) Decentni\nd) Takovy, co ma pro me specialni vyznam ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 4
+    b.append(4)
 elif a == "b":
-    b += 1
+    b.append(1)
 elif a == "c":
-    b += 2
+    b.append(2)
 elif a == "d":
-    b += 3
+    b.append(3)
 
 print ("Otazka cislo 10: Co udelas, kdyz zjistis, ze te za zady nekdo pomlouva?")
 print ("a) Taky ho pomluvim, znicim mu reputaci\nb) Nic\nc) Zkusim s nim promluvit a zjistit proc\nd) Rucne si to s nim vyridim ")
 a = input() #volba odpovedi
 if a == "a":
-    b += 1
+    b.append(1)
 elif a == "b":
-    b += 2
+    b.append(2)
 elif a == "c":
-    b += 3
+    b.append(3)
 elif a == "d":
-    b += 4
-
+    b.append(4)
+d = sum(b)
 print ("Tvuj vysledek je:")
-if b in range(10,16):
+if d in range(10,16):
     print("Princezna\nJsi ukazkovym prikladem holek z casopisu. Dokonaly, uces, obleceni, usmev. Jsi princezna, ktera ceka, ze se s ni tak bude i zachazet a ostatni se ji budou klanet.")
-elif b in range(16,22):
+elif d in range(16,22):
     print("Normální holka\nJsi normální holka. Děláš ráda normální věci. Nejsi ani příliš namyšlená, ani zlá, ale ani přehnaně hodná. Potkáváš se s normálními holčičími problémy")
-elif b in range(22,29):
+elif d in range(22,29):
     print("Prima holka\nNezkazíš žádnou srandu, jsi zábavná a přátelská. Většina lidí, až už chce, nebo nechce, má automaticky ráda. Jsi zkrátka děsně fajn.")
-elif b in range(29,35):
+elif d in range(29,35):
     print("Jedinečná holka\nJe na tobě něco zvláštního, co přitahuje (nebo naopak odpuzuje) pozornost ostatních. Jsi svá, máš své zvláštní kouzlo. Jsi prostě jedinečná. Jsi speciální.")
-elif b in range(35,40):
+elif d in range(35,40):
     print("Rebelka\nNenecháš si nic líbit. Ráda děláš věci po svém. Nezáleží ti na názoru ostatních. Umíš se pěkně naštvat a nebojíš se vyjádřit svůj názor.")
